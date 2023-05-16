@@ -1,0 +1,23 @@
+.root {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(225, 42, 42);
+    border-radius: 30px;
+    line-height: 18px;
+    margin: 7px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    color: rgb(225, 42, 42);
+
+    &:hover {
+      background-color: rgb(225, 42, 42);
+      color: rgb(237, 231, 231);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+import React from 'react';
+import styles from './Search.module.scss';
+
+const Search = ({ searchValue, setSearchValue }) => {
+  return (
+    <div className={styles.root}>
+      <img className={styles.icon} src="/img/search.svg" />
+      <input
+        value={searchValue}
+        onChange={(event) => setSearchValue(event.target.value)}
+        className={styles.input}
+        placeholder="Поиск пиццы..."
+      />
+      {searchValue && (
+        <img
+          onClick={() => setSearchValue('')}
+          className={styles.clearBtn}
+          src="/img/clear-btn.svg"
+        />
+      )}
+    </div>
+  );
+};
+
+export default Search;
