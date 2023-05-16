@@ -33,7 +33,7 @@ function App() {
         <Header />
         <div className="content">
           <Routes>
-            <Route path="/home" element={<Home searchValue={searchValue} />} />
+            <Route path="/home" element={<Home />} />
             <Route path="*" element={<NothingFound />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
